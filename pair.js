@@ -1786,7 +1786,7 @@ case 'fbaudio': {
     const res = await getFBInfo(url);
     await socket.sendMessage(from, {
       audio: { url: res.sd },
-      mimetype: 'audio/mpeg'
+      mimetype: 'audio/'
     }, { quoted: msg });
   } catch (err) {
     console.error(err);
